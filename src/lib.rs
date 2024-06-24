@@ -7,6 +7,7 @@ macro_rules! prim_impl {
         $(
             impl IsOdd for $t {
                 fn is_odd(&self) -> bool {
+					println!("Checking number for oddness...");
                     self&1 != 0
                 }
             }
